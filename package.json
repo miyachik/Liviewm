@@ -1,5 +1,7 @@
 {
   "name": "Liviewm",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "laphs": "^1.0.0"
+  }
 }
