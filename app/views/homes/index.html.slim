@@ -1,0 +1,18 @@
+
+
+div#usamin
+
+= javascript_include_tag 'homes', 'data-turbolinks-track': 'reload'
+
+javascript:
+  articles = #{@articles.html_safe}
+  articles.forEach(function(article){
+    var player = LivePhotosKit.Player();
+    player.photoSrc = 'https://s3-ap-northeast-1.amazonaws.com/liviewm-dev' +   article.image_path;
+
+    player.videoSrc = 'https://s3-ap-northeast-1.amazonaws.com/liviewm-dev' +   article.movie_path;
+    player.style.height = article.image_height/2 + 'px';
+    player.style.width = article.image_width/2 + 'px';
+    document.body.appendChild(player);
+  });
+

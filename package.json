@@ -2,6 +2,7 @@
   "name": "Liviewm",
   "private": true,
   "dependencies": {
-    "laphs": "^1.0.0"
+    "livephotoskit": "^1.4.10",
+    "superagent": "^3.5.2"
   }
 }
