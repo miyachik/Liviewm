@@ -2,7 +2,9 @@
   "name": "Liviewm",
   "private": true,
   "dependencies": {
-    "livephotoskit": "^1.4.10",
     "superagent": "^3.5.2"
+  },
+  "devDependencies": {
+    "livephotoskit": "^1.5.2"
   }
 }
