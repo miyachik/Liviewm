@@ -1,4 +1,5 @@
 package "gcc"
+package "gcc-c++"
 package "openssl-devel"
 package "libyaml-devel"
 package "readline-devel"
@@ -13,9 +14,6 @@ include_recipe 'rbenv::system'
 remote_file RBENV_SCRIPT do
   source "remote_files/rbenv.sh"
 end
-
-
-
 
 execute "set owner and mode for #{RBENV_SCRIPT} " do
   command "chown root: #{RBENV_SCRIPT}; chmod 644 #{RBENV_SCRIPT}"

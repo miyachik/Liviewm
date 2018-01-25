@@ -37,7 +37,8 @@ group :development do
   gem 'capistrano-bundler'
   gem 'capistrano-rails'
   gem 'capistrano-rbenv'
-  gem 'capistrano3-unicorn'
+  gem 'capistrano3-puma'
+  gem 'capistrano-npm'
   gem 'spring'
   gem 'web-console', '>= 3.3.0'
 end

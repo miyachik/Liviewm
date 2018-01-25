@@ -3,5 +3,9 @@
     "versions": ["2.4.1"],
     "global": "2.4.1",
     "gems": ["bundler"]
+  },
+  "ndenv": {
+    "versions": ["8.9.1"],
+    "global": "8.9.1"
   }
 }
