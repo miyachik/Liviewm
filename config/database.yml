@@ -49,6 +49,6 @@ test:
 #
 production:
   <<: *default
-  database: Liviewm_production
+  database: <%= ENV['LIVIEWM_DATABASE'] %>
   username: <%= ENV['LIVIEWM_DATABASE_USER'] %>
   password: <%= ENV['LIVIEWM_DATABASE_PASSWORD'] %>
