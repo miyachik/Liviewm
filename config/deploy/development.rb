@@ -1,4 +1,4 @@
-set :branch,"cap/ireru"
+set :branch,"master"
 set :stage, :development
 set :rails_env, 'production'
 
