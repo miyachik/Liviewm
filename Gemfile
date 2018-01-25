@@ -9,7 +9,7 @@ gem 'rails', '~> 5.1.0.rc1'
 gem 'sass-rails', github: 'rails/sass-rails'
 gem 'slim-rails'
 gem 'uglifier', '>= 1.3.0'
-# gem 'therubyracer', platforms: :ruby
+gem 'therubyracer', platforms: :ruby
 
 gem 'jbuilder', '~> 2.5'
 gem 'turbolinks', '~> 5'
@@ -37,7 +37,7 @@ group :development do
   gem 'capistrano-bundler'
   gem 'capistrano-rails'
   gem 'capistrano-rbenv'
-  gem 'capistrano3-unicorn'
+  gem 'capistrano3-puma'
   gem 'spring'
   gem 'web-console', '>= 3.3.0'
 end
