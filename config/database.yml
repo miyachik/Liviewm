@@ -15,7 +15,7 @@ default: &default
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   username: root
   password:
-  socket: /tmp/mysql.sock
+  socket: /var/lib/mysql/mysql.sock
 
 development:
   <<: *default
@@ -50,5 +50,5 @@ test:
 production:
   <<: *default
   database: Liviewm_production
-  username: Liviewm
+  username: <%= ENV['LIVIEWM_DATABASE_USER'] %>
   password: <%= ENV['LIVIEWM_DATABASE_PASSWORD'] %>
