@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class HomesController < ApplicationController
+class ArticlesController < ApplicationController
   def index
     @articles = Article.all.to_json
   end
