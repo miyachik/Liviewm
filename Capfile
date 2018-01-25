@@ -1,8 +1,10 @@
 require 'capistrano/setup'
 require 'capistrano/deploy'
-require 'capistrano/rails'
 require 'capistrano/rbenv'
 require 'capistrano/bundler'
+require 'capistrano/rails'
+require "capistrano/rails/assets"
+require 'capistrano/npm'
 require 'capistrano/puma'
 require "capistrano/scm/git"
 

@@ -1,4 +1,5 @@
 package "gcc"
+package "gcc-c++"
 package "openssl-devel"
 package "libyaml-devel"
 package "readline-devel"

@@ -1,6 +1,6 @@
-set :branch,"master"
+set :branch,"cap/ireru"
 set :stage, :development
-set :rails_env, 'development'
+set :rails_env, 'production'
 
 set :ssh_options, keys: [File.expand_path('~/.ssh/aws.pem')],
                   forward_agent: false,
