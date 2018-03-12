@@ -161,7 +161,6 @@ GEM
       activesupport (>= 4.2.0)
       multi_json (>= 1.2)
     libv8 (3.16.14.19)
-    libv8 (3.16.14.19-x86_64-darwin-16)
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -244,6 +243,8 @@ GEM
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
     schash (0.1.2)
+    serviceworker-rails (0.5.5)
+      railties (>= 3.1)
     sfl (2.3)
     slim (3.0.9)
       temple (>= 0.7.6, < 0.9)
@@ -325,6 +326,7 @@ DEPENDENCIES
   rspec-support!
   rubocop (= 0.52.1)
   sass-rails!
+  serviceworker-rails
   slim-rails
   spring
   therubyracer
@@ -333,4 +335,4 @@ DEPENDENCIES
   web-console (>= 3.3.0)
 
 BUNDLED WITH
-   1.15.3
+   1.16.1
