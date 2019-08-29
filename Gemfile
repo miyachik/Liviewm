@@ -11,7 +11,7 @@ gem 'serviceworker-rails'
 gem 'slim-rails'
 gem 'uglifier', '>= 1.3.0'
 gem 'therubyracer', platforms: :ruby
-
+gem 'friendly_id'
 gem 'jbuilder', '~> 2.5'
 gem 'turbolinks', '~> 5'
 
