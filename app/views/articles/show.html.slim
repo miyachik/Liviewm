@@ -1,0 +1,35 @@
+div#usamin
+
+= javascript_include_tag 'homes', 'data-turbolinks-track': 'reload'
+
+javascript:
+  article = #{@article.html_safe}
+  var player = LivePhotosKit.createPlayer();
+  player.photoSrc = 'https://s3-ap-northeast-1.amazonaws.com/liviewm-dev/articles/images/' + article.resource_name + ".JPG";
+  player.videoSrc = 'https://s3-ap-northeast-1.amazonaws.com/liviewm-dev/articles/movies/' + article.resource_name + ".MOV";
+  player.videoHeight = article.image_height / 2 + 'px';
+  player.photoHeight = article.image_height / 2 + 'px';
+  player.videoWidth = article.image_width / 2 + 'px';
+  player.photoWidth = article.image_width / 2 + 'px';
+  player.style.height = article.image_height / 2 + 'px';
+  player.style.width = article.image_width / 2 + 'px';
+  player.addEventListener('error', (ev) => {
+  if (typeof ev.detail.errorCode === 'number') {
+      switch (ev.detail.errorCode) {
+      case LivePhotosKit.Errors.IMAGE_FAILED_TO_LOAD:
+          // Do something
+        console.error('image');
+          break;
+      case LivePhotosKit.Errors.VIDEO_FAILED_TO_LOAD:
+        console.error('video');
+        console.error(ev);
+          // Do something
+          break;
+      }
+    } else {
+      // Extract error.
+      console.error('hoge');
+      console.error(ev.detail.error);
+    }
+  })
+  document.body.appendChild(player);

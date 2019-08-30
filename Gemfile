@@ -3,17 +3,17 @@
 source 'https://rubygems.org'
 
 gem 'dotenv-rails'
+gem 'friendly_id'
+gem 'jbuilder', '~> 2.5'
 gem 'mysql2', '>= 0.3.18', '< 0.5'
 gem 'puma', '~> 3.7'
 gem 'rails', '~> 5.1.0.rc1'
 gem 'sass-rails', github: 'rails/sass-rails'
 gem 'serviceworker-rails'
 gem 'slim-rails'
-gem 'uglifier', '>= 1.3.0'
 gem 'therubyracer', platforms: :ruby
-gem 'friendly_id'
-gem 'jbuilder', '~> 2.5'
 gem 'turbolinks', '~> 5'
+gem 'uglifier', '>= 1.3.0'
 
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
@@ -36,10 +36,10 @@ group :development do
   gem 'bullet'
   gem 'capistrano'
   gem 'capistrano-bundler'
+  gem 'capistrano-npm'
   gem 'capistrano-rails'
   gem 'capistrano-rbenv'
   gem 'capistrano3-puma'
-  gem 'capistrano-npm'
   gem 'spring'
   gem 'web-console', '>= 3.3.0'
 end

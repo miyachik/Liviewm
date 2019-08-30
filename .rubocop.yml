@@ -5,6 +5,7 @@ AllCops:
     - vendor/**/*
     - db/**/*
     - bin/**
+    - config/deploy.rb
   DisplayCopNames: true
   TargetRubyVersion: 2.3
 Rails:
