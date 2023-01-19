@@ -1,12 +1,9 @@
 GIT
-  remote: git://github.com/rails/sass-rails.git
-  revision: dd04a6a6d19cbd7cfd2f9d304a445444e0b88a19
+  remote: https://github.com/rails/sass-rails.git
+  revision: 551251bddec4d6b75446cb1c1630ed26e5318f8e
   specs:
-    sass-rails (6.0.0.beta1)
-      railties (>= 4.0.0, < 6)
-      sass (~> 3.4)
-      sprockets (~> 4.x)
-      sprockets-rails (< 4.0)
+    sass-rails (6.0.0)
+      sassc-rails (~> 2.1, >= 2.1.1)
 
 GIT
   remote: https://github.com/rspec/rspec-core.git
@@ -127,7 +124,7 @@ GEM
       capistrano-bundler
       puma (~> 3.4)
     coderay (1.1.2)
-    concurrent-ruby (1.0.5)
+    concurrent-ruby (1.1.10)
     crass (1.0.3)
     diff-lcs (1.3)
     dotenv (2.2.1)
@@ -146,10 +143,10 @@ GEM
     ffi (1.9.18)
     friendly_id (5.2.5)
       activerecord (>= 4.0.0)
-    globalid (0.4.1)
-      activesupport (>= 4.2.0)
+    globalid (1.0.1)
+      activesupport (>= 5.0)
     hashie (3.5.7)
-    i18n (0.9.1)
+    i18n (0.9.5)
       concurrent-ruby (~> 1.0)
     itamae (1.9.11)
       ansi
@@ -175,7 +172,7 @@ GEM
     method_source (0.9.0)
     mini_mime (1.0.0)
     mini_portile2 (2.3.0)
-    minitest (5.11.1)
+    minitest (5.17.0)
     multi_json (1.13.1)
     mysql2 (0.4.10)
     net-scp (1.2.1)
@@ -239,11 +236,14 @@ GEM
       unicode-display_width (~> 1.0, >= 1.0.1)
     ruby-progressbar (1.9.0)
     ruby_dep (1.5.0)
-    sass (3.5.5)
-      sass-listen (~> 4.0.0)
-    sass-listen (4.0.0)
-      rb-fsevent (~> 0.9, >= 0.9.4)
-      rb-inotify (~> 0.9, >= 0.9.7)
+    sassc (2.4.0)
+      ffi (~> 1.9)
+    sassc-rails (2.1.2)
+      railties (>= 4.0.0)
+      sassc (>= 2.0)
+      sprockets (> 3.0)
+      sprockets-rails
+      tilt
     schash (0.1.2)
     serviceworker-rails (0.5.5)
       railties (>= 3.1)
@@ -282,7 +282,7 @@ GEM
     turbolinks (5.1.0)
       turbolinks-source (~> 5.1)
     turbolinks-source (5.1.0)
-    tzinfo (1.2.4)
+    tzinfo (1.2.10)
       thread_safe (~> 0.1)
     uglifier (4.1.3)
       execjs (>= 0.3.0, < 3)
